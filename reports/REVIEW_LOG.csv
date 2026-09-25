@@ -1,0 +1,4 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0227.jpg,xe gần trung tâm ảnh,added,AI bỏ sót xe; thêm khung ôm sát thân xe theo GUIDELINE_LABEL.md
+1,frame_0312.jpg,xe bị cắt ở mép dưới ảnh,added,AI bỏ sót xe; chỉ vẽ khung phần xe nằm trong ảnh theo GUIDELINE_LABEL.md
+1,frame_0326.jpg,xe khuất sau cây ở góc trên bên trái,added,AI bỏ sót xe bị che; vẽ khung phần thân xe nhìn thấy theo GUIDELINE_LABEL.md
