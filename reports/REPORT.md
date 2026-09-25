@@ -27,7 +27,7 @@ Ba frame được chọn làm bằng chứng là `frame_0182.jpg` (rank 1, 0.959
 | vòng | model | ảnh train | box train | AP50 | Δ AP50 so cold start | P@0.25 | R@0.25 | F1 | R small | R medium | R large |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 0 | yolov8n cold start (COCO car+bus+truck) | 0 | 0 | 0.771 | — | 0.925 | 0.489 | 0.640 | 0.182 | 0.547 | 0.561 |
-| 1 | yolov8n fine-tune vòng 1 | 12 | 327 | 0.474 | -0.298 | 1.000 | 0.030 | 0.058 | 0.000 | 0.037 | 0.024 |
+| 1 | yolov8n fine-tune vong 1..1 | 12 | 327 | 0.474 | -0.298 | 1.000 | 0.030 | 0.058 | 0.000 | 0.037 | 0.024 |
 
 Ở vòng 1, trong 169 box AI đề xuất có 148 box giữ nguyên, 6 box chỉnh sửa và 15 box xóa; tôi thêm 173 box. Sau fine-tune AP50 giảm 0.298 so với cold start (0.7714 xuống 0.4736). Precision tại conf 0.25 tăng từ 0.925 lên 1.000 nhưng recall giảm từ 0.489 xuống 0.030 và F1 từ 0.640 xuống 0.058. Recall giảm ở cả ba nhóm kích thước: small 0.182 xuống 0, medium 0.547 xuống 0.037, large 0.561 xuống 0.024. Như vậy vòng này không cho thấy nhóm kích thước nào tốt lên theo recall.
 
